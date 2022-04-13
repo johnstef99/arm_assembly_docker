@@ -4,7 +4,7 @@ Using this docker you can compile and run arm 32bit assembly code using a x86
 machine. In the [examples](./examples/) directory you can find a *hello world* 
 example that contains a Makefile to help you get started.
 
-Basically this container uses `arm-linux-gnueabi` to compile & ling assembly
+Basically this container uses `arm-linux-gnueabi` to compile & link assembly
 code and `qemu-arm` to run the arm executable.
 
 I added some default configs for vim, zsh and tmux. But you can mount your
