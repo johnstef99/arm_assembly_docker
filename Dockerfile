@@ -34,4 +34,6 @@ copy ./tmux.conf /root/.tmux.conf
 
 workdir /root
 
+env TERM="xterm-256color"
+
 cmd ["zsh"]
