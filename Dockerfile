@@ -32,6 +32,13 @@ run vim +PlugInstall +qall
 run apt install -y tmux
 copy ./tmux.conf /root/.tmux.conf
 
+# debugger
+run apt install -y gdb-multiarch
+copy ./gdbinit /root/.gdbinit
+
+# extras
+run apt install -y man file
+
 workdir /root
 
 env TERM="xterm-256color"

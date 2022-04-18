@@ -4,7 +4,6 @@ Plug 'johnstef99/arm-syntax-vim'
 Plug 'preservim/nerdtree' |
   \ Plug 'Xuyuanp/nerdtree-git-plugin' |
   \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight' |
-  \ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
@@ -13,6 +12,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
 Plug 'justinmk/vim-sneak'
 Plug 'vim-scripts/BufOnly.vim'
+
 call plug#end()
 
 let mapleader = ' '
