@@ -2,16 +2,6 @@
 .section .text
 
 _start:
-
-				// read and print one number for testing
-        ldr     r0, =num_buf        // set buf to save input
-        mov     r1, #255            // set read count to 6 
-        bl      read
-        bl      atoi
-        bl      itoa
-        bl      println
-        b       exit
-
         ldr     r0, =msg_ins
         bl      print
         ldr     r0, =num_buf        // set buf to save input
