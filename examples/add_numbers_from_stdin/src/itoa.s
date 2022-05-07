@@ -11,6 +11,17 @@ itoa:
         mov     r7, #0              // index of string char
         mov     r11, #10            // const of 10
 
+        cmp     r1, #0              // if number >= 0
+        bge     num_of_digits       // skip negative number covert
+
+        // covert from negative to positive
+        mov     r5, #0x2d           // r5 = '-'
+        strb    r5, [r0]            // r0[0] = '-'
+        add     r7, r7, #1          // increase the index of pointing char in string by 1
+        mvn     r5, #0              // r5 = 0xffffffff
+        eor     r1, r1, r5          // r1 = r1 xor r5
+        add     r1, r1, #1          // add 1 to r1 to convert it to positive
+
         mov     r6, r1              // copy number to r6
     num_of_digits:
         udiv    r6, r6, r11         // div by 10
